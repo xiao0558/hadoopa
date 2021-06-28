@@ -18,7 +18,7 @@ public class FileSystemConfig {
 	// 配置文件优先级：Configuration > 开发环境hdfs-site.xml > 服务器上的hdfs-site.xml > 服务器上的hdfs-default.xml
 	@Bean
 	public FileSystem fileSystem() throws URISyntaxException, IOException, InterruptedException {
-		URI uri = new URI("hdfs://hadoop76:8020");
+		URI uri = new URI("hdfs://hadoop161:8020");
 		org.apache.hadoop.conf.Configuration configuration = new org.apache.hadoop.conf.Configuration();
 		configuration.set("dfs.replication", "2");
 		String user = "root";
