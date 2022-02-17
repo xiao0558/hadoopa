@@ -16,7 +16,7 @@ public class HadoopMain {
 		
 		HdfsService service = context.getBean(HdfsService.class);
 		
-		service.testMkdirs(); // 创建文件夹1
+		service.testMkdirs(); // 创建文件夹
 		service.testPut(); // 文件上传
 		service.testGet(); // 文件下载
 		service.testMv(); // 文件更名和移动
